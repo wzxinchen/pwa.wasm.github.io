@@ -1,5 +1,5 @@
 {
-  "cacheBootResources": true,
+  "cacheBootResources": false,
   "debugBuild": false,
   "entryAssembly": "Blazui.ClientRender.PWA",
   "linkerEnabled": true,
