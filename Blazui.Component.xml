@@ -753,11 +753,12 @@
             </summary>
             <param name="option"></param>
         </member>
-        <member name="M:Blazui.Component.Extension.AddBlazuiServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+        <member name="M:Blazui.Component.Extension.AddBlazuiServicesAsync(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String)">
             <summary>
             添加 Blazui 相关服务
             </summary>
             <param name="services"></param>
+            <param name="lang">默认语言</param>
             <returns></returns>
         </member>
         <member name="T:Blazui.Component.GlobalBlazuiSettings">
@@ -822,10 +823,22 @@
             Lang
             </summary>
         </member>
-        <member name="P:Blazui.Component.Lang.BLang.Configuration">
+        <member name="P:Blazui.Component.Lang.BLang.configuration">
             <summary>
             一组键/值应用程序配置属性
             </summary>
+        </member>
+        <member name="P:Blazui.Component.Lang.BLang.CurrentLang">
+            <summary>
+            当前语言，默认中文
+            </summary>
+        </member>
+        <member name="M:Blazui.Component.Lang.BLang.SetLangAsync(System.String)">
+            <summary>
+            设置语言文件的文件名
+            </summary>
+            <param name="lang"></param>
+            <returns></returns>
         </member>
         <member name="M:Blazui.Component.Lang.ILang.InitBLangBaseAsync">
             <summary>
